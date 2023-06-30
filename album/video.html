@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="loadVideo()">Load Video</button>
+  <br>
+  <iframe id="videoFrame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+
+  <script>
+    function loadVideo() {
+      var videoUrl = prompt("Enter the video URL:");
+      var videoFrame = document.getElementById("videoFrame");
+      videoFrame.src = videoUrl;
+    }
+  </script>
+</body>
+</html>
